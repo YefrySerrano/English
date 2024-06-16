@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abecedario con Botones</title>
+</head>
+<body>
+    <div id="abecedario"></div>
+
+    <script>
+        // Seleccionar el elemento donde se mostrará el abecedario
+        const contenedor = document.getElementById('abecedario');
+
+        // Crear un ciclo para las letras de la A a la Z
+        for (let i = 65; i <= 90; i++) {
+            // Convertir el código ASCII a una letra
+            const letra = String.fromCharCode(i);
+
+            // Crear un elemento botón para la letra
+            const boton = document.createElement('button');
+            boton.textContent = letra;
+            boton.style.margin = "5px"; // Añadir un margen para separar los botones
+
+            // Añadir el botón al contenedor
+            contenedor.appendChild(boton);
+        }
+    </script>
+</body>
+</html>
+
+let descripcionesConcatenadas = ;
+    for (const [clave, valor] of Object.entries(abecedarioJSON[letra])) {
+        descripcionesConcatenadas += <li><strong>${clave}</strong>: ${valor}</li>;
+    }
+    descripcionesConcatenadas += </ul>;
